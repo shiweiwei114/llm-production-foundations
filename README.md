@@ -34,3 +34,12 @@ This project emphasizes:
 Build AI systems with production discipline from day one — focusing on reliability, cost awareness, and clean architecture rather than experimentation alone.
 
 This repository serves as the foundation for a broader transition into applied AI engineering.
+
+
+---
+
+## Project Roadmap
+
+- Month 1 – Production LLM API Foundations
+- Month 2 – Embeddings & Retrieval-Augmented Generation (RAG)
+- Month 3 – Evaluation, Guardrails, and Optimization
