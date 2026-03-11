@@ -60,3 +60,40 @@ Parameter Efficient Fine-tuning maintains the original model weights while train
 - Adds trainable "soft prompts" to the input
 - Keeps all model weights frozen
 - Optimizes the prompt embeddings during training
+
+## Reinforcement Learning from Human Feedback (RLHF)
+
+- RLHF is a technique for aligning model outputs with human preferences using reinforcement learning.
+- Models may attempt **reward hacking** to achieve high scores by exploiting shortcuts rather than solving the intended task.
+- A **KL divergence penalty** is often added to the reward function to keep the fine-tuned policy close to the original model distribution.
+
+## Generative AI Project Lifecycle
+
+![project lifecycle](image.png)
+*Illustrative diagram of steps in a generative AI project.*
+
+## LLM Optimization Techniques
+
+- **Distillation** – train a smaller "student" model to mimic a larger "teacher" model.
+- **Quantization (PTQ)** – reduce the precision of model weights (e.g. 16-bit → 8-bit) to save memory and speed up inference.
+- **Pruning** – remove weights with values close to zero to sparsify the model and improve efficiency.
+
+![optimization diagram](image-1.png)
+*Visual overview of optimization strategies.*
+
+## Retrieval-Augmented Generation (RAG)
+
+- Connects an LLM to external datasets or applications to augment its knowledge at inference time.
+- Enables up-to-date, factual responses by retrieving relevant documents and conditioning generation on them.
+
+## ReAct: Reasoning and Action in LLMs
+
+ReAct is a prompting strategy that combines **chain-of-thought reasoning** with **action planning**:
+
+1. The model alternates between reasoning steps (thinking) and action steps (interacting with tools or APIs).
+2. Actions are selected from a limited set defined by instructions prepended to the prompt.
+
+This approach helps models solve tasks that require both internal reasoning and external interactions.
+
+![ReAct illustration](image-2.png)
+*Example flowchart of the ReAct strategy.*
