@@ -33,40 +33,6 @@ This month focuses on understanding how modern LLMs work at a conceptual level a
 
 ---
 
-## 🛠 Technical Implementation
-
-This month’s implementation focuses on building a production-style LLM API service.
-
-### Key Features Implemented
-
-- LLM chat endpoint (`POST /chat`)
-- Structured request/response schema
-- Token usage tracking
-- Cost estimation per request
-- Configurable sampling parameters (temperature)
-- Structured logging
-- Environment-based configuration
-- Dockerized deployment
-
----
-
-## 📦 Project Architecture (High-Level)
-
-ai-chat-service/
-│
-├── app/
-│ ├── main.py
-│ ├── llm_client.py
-│ ├── cost_tracker.py
-│ ├── schemas.py
-│ └── logging_config.py
-│
-├── requirements.txt
-├── Dockerfile
-└── README.md
-
-
----
 
 ## 📊 Engineering Focus
 
